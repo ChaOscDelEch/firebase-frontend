@@ -107,15 +107,39 @@ npm run build
 firebase deploy --only hosting
 ```
 
-## 🔗 Related
+## Related
 
-- Backend: [firebase-backend repository]
+**Backend Repository:** [https://github.com/ChaOscDelEch/firebase-backend](https://github.com/ChaOscDelEch/firebase-backend)
 
----
+### Why Separate Repositories?
+
+This project demonstrates professional full-stack architecture by splitting backend and frontend into independent repositories:
+
+**Deployment Independence:**
+- Backend deploys to Firebase Cloud Functions (serverless, pay-per-invocation)
+- Frontend deploys to static hosting (Vercel, Netlify, Firebase Hosting, etc.)
+- Each can be scaled, versioned, and rolled back independently
+
+**Development Workflow Benefits:**
+- Frontend developers work with modern React patterns, TanStack Query caching
+- Backend developers focus on Firebase Functions, Firestore rules, and security
+- Clean dependency management - no mixing of server/client packages
+
+**Modern Architecture Patterns:**
+- Follows JAMstack principles (JavaScript, APIs, Markup)
+- Backend is a true API layer (HTTP callable functions)
+- Frontend is a pure client-side application
+- Connected via Firebase emulators locally, production Firebase in deployment
+
+**Code Review & Certification:**
+- Backend can be reviewed for security, validation, ESM modularity
+- Frontend assessed for React best practices, caching strategy, UX
+- Each repository represents a distinct skill set and responsibility area
+
+This separation reflects industry standards where frontend and backend teams maintain separate codebases with clear API contracts between them.
+
+
+
 
 **Built for WBS Coding School Certification Module**
 
-## Related Repositories
-
-- **Backend Repository:** [https://github.com/ChaOscDelEch/firebase-backend](https://github.com/ChaOscDelEch/firebase-backend)
-- **Frontend Repository:** [https://github.com/ChaOscDelEch/firebase-frontend](https://github.com/ChaOscDelEch/firebase-frontend)
